@@ -1,0 +1,104 @@
+---
+// Import Tailwind directives
+import '../styles/global.css';
+---
+
+<header class="sticky top-0 z-50 py-4 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <nav class="backdrop-blur-md bg-black/30 shadow-lg rounded-xl p-4 border-2 border-dashed border-purple-400/30">
+      <div class="flex items-center justify-between">
+        {/* Logo and Name - Left Side */}
+        <div class="flex-shrink-0">
+          <a href="/" class="group">
+            <div class="flex items-center space-x-3 p-2 pl-3 pr-4 ml-2 rounded-lg transition-all duration-300 hover:bg-gray-700/30 border-2 border-dashed border-transparent group-hover:border-gray-400">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-400 to-pink-500 flex items-center justify-center shadow-lg transform group-hover:rotate-12 transition-all duration-300">
+                <span class="text-white font-bold text-xl">LL</span>
+              </div>
+              <span class="text-white font-bold text-xl md:text-2xl bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-pink-400 group-hover:opacity-90 transition-opacity duration-300">
+                Lukáš Lisičan
+              </span>
+            </div>
+          </a>
+        </div>
+
+        {/* Navigation - Center */}
+        <div class="hidden md:block">
+        <div class="ml-10 flex items-center space-x-8">
+            <a href="#" class="text-white hover:text-purple-300 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:scale-105 hover:bg-white/10">
+              Domů
+            </a>
+          
+          {/* Dropdown Menu */}
+          <div class="relative group">
+            <button class="text-white hover:text-purple-300 px-3 py-2 rounded-md text-sm font-medium flex items-center transition-all duration-300 hover:bg-white/10">
+              Služby
+              <svg class="ml-1 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white/90 backdrop-blur-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0 z-50">
+              <div class="py-1">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900 transition-colors duration-200">Webové stránky</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900 transition-colors duration-200">Aplikace</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900 transition-colors duration-200">Konzultace</a>
+              </div>
+            </div>
+          </div>
+          
+          <a href="#portfolio" class="text-white hover:text-purple-300 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:scale-105 hover:bg-white/10">
+            Portfolio
+          </a>
+          <a href="#o-mne" class="text-white hover:text-purple-300 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:scale-105 hover:bg-white/10">
+            O mně
+          </a>
+          <a href="#kontakt" class="text-white hover:text-purple-300 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:scale-105 hover:bg-white/10">
+            Kontakt
+          </a>
+        </div>
+      </div>
+
+        {/* Mobile menu button */}
+        <div class="md:hidden flex items-center">
+          <button class="inline-flex items-center justify-center p-2 rounded-md text-gray-300 hover:text-white hover:bg-white/10 focus:outline-none transition duration-150 ease-in-out">
+            <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile menu */}
+      <div class="md:hidden hidden mt-4">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+      <a href="#domu" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-purple-300 hover:bg-white/10">Domů</a>
+      <a href="#portfolio" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-purple-300 hover:bg-white/10">Portfolio</a>
+      <a href="#o-mne" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-purple-300 hover:bg-white/10">O mně</a>
+      <a href="#kontakt" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-purple-300 hover:bg-white/10">Kontakt</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<style is:global>
+  /* Smooth animations */
+  .hover\:scale-105 {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .hover\:scale-105:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Gradient text animation */
+  @keyframes gradientText {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .animate-gradient-text {
+    background-size: 200% auto;
+    animation: gradientText 6s ease infinite;
+  }
+</style>
