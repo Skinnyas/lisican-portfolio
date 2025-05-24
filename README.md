@@ -1,47 +1,24 @@
-# Astro Starter Kit: Minimal
+# 🚀 Portfolio - Lukáš Lisičan
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Moderní a responzivní portfolio web vytvořený s využitím Astro, Tailwind CSS a dalších moderních technologií.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Astro](https://img.shields.io/badge/Made_with-Astro-FF5D01?style=flat&logo=astro&logoColor=white)](https://astro.build/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## ✨ Funkce
 
-## 🚀 Project Structure
+- **Moderní design** s responzivním rozložením
+- **Rychlé načítání** díky Astro a optimalizacím
+- **Interaktivní prvky** s jemnými přechody
+- **Kontaktní formulář** pro snadné oslovení
+- **Přehledné portfolio** projektů a dovedností
+- **Temný režim** pro pohodlné prohlížení
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🛠️ Technologie
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- [Astro](https://astro.build/) - Moderní webový framework
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [TypeScript](https://www.typescriptlang.org/) - Typovaný JavaScript
+- [Vite](https://vitejs.dev/) - Rychlý vývojový server a sestavování
+- [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/) - Linting a formátování kódu
